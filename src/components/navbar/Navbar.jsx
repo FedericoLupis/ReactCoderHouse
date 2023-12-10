@@ -3,26 +3,24 @@ import { CartWidget } from './CartWidget'
 
 
 export const Navbar = () =>{
-
-    const logo = "Chateau Buenos Aires"
     
     return(
-        <header className="bg-red-900 w-full h-14">
-            <div className="flex justify-around text-amber-50">
+        <header className="bg-pink-950 w-full h-32 flex justify-around items-center text-white">
 
-                <h1>{logo}</h1>
+
+                <img className="h-24" src="./logo.png" alt="logo" />
 
                 <nav className="">
-                    <NavbarLink NavbarLinkItem="item 1"/>
-                    <NavbarLink  NavbarLinkItem="item 2"/>
-                    <NavbarLink  NavbarLinkItem="item 3"/>
+                        <NavbarLink NavbarLinkItem="Quienes Somos"/>
+                        <NavbarLink NavbarLinkItem="Vinos Argentinos"/>
+                        <NavbarLink NavbarLinkItem="Vinos del Mundo"/>
                 </nav>
 
-                <div className="flex justify-between">
+                <div className="flex justify-between items-center">
                     <CartWidget itemsTotal={10}/>
                 </div>
 
-            </div>
+
         </header>
     )
 

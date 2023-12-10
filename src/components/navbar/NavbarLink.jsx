@@ -1,3 +1,3 @@
 export const NavbarLink = ({href, NavbarLinkItem}) =>{
-    return <a href={href} >{NavbarLinkItem}</a>
+    return <a className="mx-8" href={href} >{NavbarLinkItem}</a>
 }
